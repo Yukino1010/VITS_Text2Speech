@@ -1,6 +1,6 @@
 import torch
 from torch import nn
-from modules_n import LayerNorm
+from modules import LayerNorm
    
     
 class FFN(nn.Module):
