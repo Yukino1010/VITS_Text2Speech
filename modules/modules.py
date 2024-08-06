@@ -121,7 +121,7 @@ class ResidualCouplingLayer(nn.Module):
         else:
             x1 = (x1 - m) * x_mask
             x = torch.cat([x0, x1], 1)
-            return x, None
+            return x
         
 class DurationPredictor(nn.Module):
     def __init__(self, in_channels, filter_channels=256, kernel_size=3, p_dropout=0.5, gin_channels=0):
